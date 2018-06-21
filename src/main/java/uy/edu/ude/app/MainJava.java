@@ -7,7 +7,7 @@ import java.util.List;
 class MainJava {
 
   public static void main(String[] args) {
-    final List<EstudianteJava> estudiantes = List
+    final var estudiantes = List
         .of(new EstudianteJava("Julio"), new EstudianteJava("María", 12));
     final var mayorPuntaje = estudiantes.stream().max(comparingInt(p -> {
       if (p.getPuntaje() == null) {
